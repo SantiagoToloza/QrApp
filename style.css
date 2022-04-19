@@ -16,7 +16,7 @@ body{
     
     width: 90%;
     max-width: 1100px;
-    height: 100%;
+    height: 100vh;
     margin: auto;
     gap: 10px;
     overflow: hidden;
@@ -27,7 +27,7 @@ body{
 .textos-hero{
     
     grid-column: 2/7;
-    grid-row: 3/12;
+    grid-row: 5/12;
     height: 100%;
     text-align: center;
     line-height: 2;
@@ -80,16 +80,12 @@ body{
 
 .hero{
     width: 100%;
-    grid-row: 3/12;
+    grid-row: 4/10;
     grid-column: 7/-1;
 }
 
-.btngo{
-    height: 100px;
-   
-}
 
-           
+   
 
 
 .escanear-p{
@@ -102,7 +98,16 @@ body{
     font-size: 26px;
 }
 .scan{
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 90%;
+    max-width: 1100px;
+    height: 80vh;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+
 }
 
 .btnscan{
@@ -115,6 +120,8 @@ body{
 }
 .texto-scanear{
     grid-column: 7/-1;
+    grid-row: 1/3;
+    
     width: 100%;
     height: auto;
 }
@@ -126,8 +133,9 @@ body{
 
 .hero2{
     margin-top: 50px;
-    grid-column: 1/7;
-    height: 500px;
+    grid-column: 1/6;
+    grid-row: 1/3;
+    height: auto;
     width: 100%;
 }
 
@@ -136,6 +144,8 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    background-color: #ca21dd;
+    height: 100px;
  
    
     
@@ -143,7 +153,7 @@ body{
 
 .foot a{
     margin: auto;
-    
+
  
 }
 
@@ -157,6 +167,8 @@ body{
     grid-column: 3/7;
     display: flex;
     justify-content: space-around;
+    flex-wrap:wrap;
+    
     
 }
 
@@ -166,7 +178,7 @@ body{
 }
 .navbar .menu a{
     text-decoration: none;
-    color: rgb(106, 12, 173);
+    color: rgb(210, 9, 147);
     text-transform: uppercase;
     font-weight: bold;
 
@@ -178,8 +190,25 @@ body{
 
 
 .introqr{
-    grid-template-rows: repeat(12,40px);
+    grid-template-rows: repeat(9,40px);
     
 }
 
+
+.icono{
+    height: 100px;
+    grid-row: 11/12;
+    grid-column: 1/-1;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+}   
+    
+   
+  
+
+
+.icono i{
+    color: black;
+}
 
